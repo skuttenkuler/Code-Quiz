@@ -1,4 +1,4 @@
-var questions = [
+ questions = [
     {
       title: "Which town does the Simpsons take place? ",
       choices: ["Nashville", "Springfield", "Springton", "Portland"],

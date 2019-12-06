@@ -1,3 +1,21 @@
 .body{
     background-image: url(https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/the-simpsons_31/seriesDetail_s31.jpg?fit=inside%7C1920:1080);
+    background-size: cover;
+}
+#navbar {
+    background: transparent;
+}
+.container{
+    background-color: #70D1FE;
+
+    height: 400px;
+    width: 400px;
+    margin-left: 50px;
+    border-radius: 25px;
+   
+}
+.container h3{
+    display: flex;
+    justify-content: center;
+    padding-top:25px;
 }

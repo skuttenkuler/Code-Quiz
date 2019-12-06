@@ -1,24 +1,40 @@
+
 //pointers
-
-//timer
-//eventListener to start quiz
-    //when pushed, initialize timer
-    //initialize quiz function
-//eventListner to go to highscore page
+let playerScore = 0
+var timer;
 
 
-//function quiz
+$(document).ready(function(){
+    //click for start button
+   
+     
+    
+    function renderQuiz(){
+    currentQuestionIndex = 0
+    //renderQuiz
+    //startTimer
+    //hadnleSubmit
+    //nextQuestion
+    //restartQuiz
+        
+        //hide the h3 tag and quizbutton
+        $("h3").hide()
+        $("#quizButton").hide()
+        //point question to question index 0
+    };
     //set score variable
     //timer == '0' return the value or score and stop quiz
     //prompt user with question
     //if correct or true then 
-        //score ++
+    //score ++
     //else
-        //don't add point
-
-//take score and add name to it
-//send data to storage
-
-
-
-//pull storage and display on highscore.html
+    //don't add point
+    
+    //take score and add name to it
+    //send data to storage
+    
+    
+    
+    //eventListener
+    $("#quizButton").click(renderQuiz())
+});
