@@ -8,7 +8,7 @@ Responsive Multiple Choice Quiz with Local Storage for Berkley Bootcamp
 * JQuery
 
 # Deployed Site
-* [Password Generator](https://skuttenkuler.github.io/Password-Generator/)
+* [Password Generator](https://skuttenkuler.github.io/Code-Quiz/)
 
 # Screenshot
 ![Alt text](./assets/images/screen.png?raw=true "Optional Title")
