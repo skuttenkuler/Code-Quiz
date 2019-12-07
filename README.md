@@ -14,7 +14,7 @@ Responsive Multiple Choice Quiz with Local Storage for Berkley Bootcamp
 ![Alt text](./assets/img/screen.png?raw=true "Optional Title")
 ![Alt text](./assets/img/screen1.png?raw=true "Optional Title")
 # Code
-![Alt text](./assets/img/screen2.png?raw=true "Optional Title")
+![Alt text](./assets/img/screen3.png?raw=true "Optional Title")
 # Author
 - Sam Kuttenkuler
     - [Github](https://www.github.com/skuttenkuler)
