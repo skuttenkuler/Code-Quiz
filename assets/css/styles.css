@@ -1,37 +1,68 @@
-.body{
+body{
     background-image: url(https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/the-simpsons_31/seriesDetail_s31.jpg?fit=inside%7C1920:1080);
-    background-size: cover;
-}.score-body{
-    background-image: url(https://external-preview.redd.it/12eKqb17AibeR_pZcZVEWmOAZOsa63usGfVdrb1k6fc.jpg?auto=webp&s=dc439265448ed1a2714403df1c00509822b08b17);
-    background-size: cover;
+    background-size: cover no-repeat;
 }
-#navbar {
-    background: transparent;
+.navbar {
+    background-color: #53a5d8;
+  
+}
+.nav-link{  
+    color: yellow;
+}
+#timeLeftContainer, #codeQuizIntro, #caliQuizIntro, #questionContainer,#quizResults,#highScores {
+    display: none;
 }
 
-.timer{
-    margin-left:150px; 
+#selectQuiz {
+    max-width: 250px;
+    font-size: 1.5em;
 }
-.container{
-    background-color: #70D1FE;
 
-    height: 400px;
-    width: 400px;
-    margin-left: 50px;
-    border-radius: 25px;
-   
+.choice > button {
+    width: 100%;
 }
-.container h3{
-    display: flex;
-    justify-content: center;
-    padding-top:25px;
-}
-.highscoreContainer{
-    background-color: #70D1FE;
 
-    height: 400px;
-    width: 400px;
-    margin-left: 50px;
-    border-radius: 25px;
-   
+.choice {
+    margin: 0.5em 0;
+    position:relative
+}
+
+.choice .btn-success:before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    position: absolute;
+    left: 25px;
+}
+
+.choice .btn-danger:before {
+    font-family: "FontAwesome";
+    content: "\f00d";
+    position: absolute;
+    left: 25px;
+}
+
+#timeLeftContainer {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#timeLeftContainer {
+    color: #777;
+}   
+
+#timeLeftContainer.bg-danger {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    #selectQuiz {
+        max-width: 100%;
+        text-align: center;
+    }
+    .choice > button {
+        width: 100%;
+    }
 }

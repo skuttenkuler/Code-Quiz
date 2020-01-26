@@ -1,4 +1,4 @@
- questions = [
+ easyQuestions = [
     {
       title: "Which town does the Simpsons take place? ",
       choices: ["Nashville", "Springfield", "Springton", "Portland"],
@@ -26,5 +26,33 @@
     },
 
   ];
+  hardQuestions = [
+    {
+      title: "What's the name of the school's bus driver",
+      choices: ["Cletus", "Troy McClure", "Homer", "Otto"],
+      answer: "Otto"
+    },
+    {
+      title: "What is Marge's maiden name?",
+      choices: ["Hoover", "Bouvier", "Smith", "Croupier"],
+      answer: "Bouvier"
+    },
+    {
+      title: "Who practices medicine without a license?",
+      choices: ["Dr. Hoover ", "Dr. Hibbert", "Dr. Wiggum", "Dr. Nick"],
+      answer: "Dr. Nick"
+    },
+    {
+      title: "Who stands in for Kent Brockman when he is ill?",
+      choices: ["Scott Christian", "Arnie Pie", "Rainier Wolfcastle", "Slomo"],
+      answer: "Scott Christian"
+    },
+    {
+      title: "Who invented the Flaming Moe?",
+      choices: ["Homer Simpson", "Moe Szyslak", "Moe St. Cool", "Selma Bouvier"],
+      answer: "Homer Simpson"
+    },
+
+  ]
 
   

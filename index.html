@@ -4,44 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Simpsons Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
-<body class="body">
-        <nav id="navbar"class="navbar navbar-expand-lg">
-                <a href="highscore.html"><img src="https://fontmeme.com/permalink/191206/9351589305b49757281703e1b90ca836.png" alt="simpsons-font" border="0"></a>
-                <div class="timer"></div>
-                    <div id="minutes"></div>
-                    <div id="seconds"></div>
-                </div>
-              </nav>
-    
-    
-    <div class="container">
-        <div class="quizContainer">
+<body>
 
-            <h3> Quiz Time! </h3>
-            <div class="question">
-                <div id="question"></div>
+    <nav class="navbar navbar-expand-lg ">
+        <select class="form-control" id="selectQuiz">
+            <option value="" selected disabled>Select a quiz difficulty...</option>
+            <option value="Easy">Easy Quiz</option>
+            <option value="Hard">Hard Quiz</option>
+        </select>
+        <ul class="mx-auto mr-md-0 ml-md-auto navbar-nav">
+            <li class="nav-item"><a href="#" id="viewScores" class="nav-link">View High Scores</a></li>
+        </ul>
+        
+    </nav>
+
+    <div class="container pt-3 pt-md-5">
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="col-md-8 col-lg-6" id="quizContainer">
+                <div id="timeLeftContainer" class="text-center">
+                    Time Left: <span id="timeLeft"></span>
+                </div>
+                <div id="intro">
+                    <h1 class="my-3">Select a difficulty man!</h1>
+                    
+                </div>
+                <div id="easyQuizIntro">
+                    <h1 class="my-3">Easy Quiz</h1>
+                    <p class="my-3">Gonna be a breeze.... </p>
+                    <p><button class="btn btn-primary start-button" data-quiz-id="javascript">Start Quiz!</button></p>
+                </div>
+                <div id="hardQuizIntro">
+                    <h1 class="my-3">Hard Quiz</h1>
+                    <p class="my-3">You are so got the smrt, S-M-R-T, I mean S-M-A-R-T!</p>
+                    <p><button class="btn btn-primary start-button" data-quiz-id="california">Start Quiz!</button></p>
+                </div>
+                <div id="questionContainer">
+                    <h3 id="question" class="my-3"></h3>
+                    <div id="choices"></div>
+                </div>
+                <div id="quizResults">
+                    <h1 class="my-3">Quiz Complete</h1>
+                    <p class="my-3">Your score: <strong><span id="finalScore"></span></strong></p>
+                    <input type="text" id="yourInitials" class="form-control my-3" placeholder="Enter your initials..."/><button id="submitScore" class="btn btn-primary">Save Score</button>
+                    <button class="btn btn-secondary" id="startOverAlso">Start Over</button>
+                </div>
+                <div id="highScores">
+                    <h1>High Scores</h1>
+                    <div id="theScores"></div>
+                    <button class="btn btn-primary" id="startOver">Start the Quiz Over Man</button>
+                    <button class="btn btn-secondary" id="clearScores">Clear Scores</button>
+                </div>
             </div>
-            <div class="choices">
-                <div id="choices"></div>
-            </div>
-            <div class="quizButton">
-                <button class="startButton">Start Quiz, Man!</button>
-            </div>
-            
+            <div class="col-md-2 col-lg-3"></div>
         </div>
     </div>
-
-     
-
-<script src="./assets/js/script.js"></script>
-<script src="./assets/js/questions.js"></script>
+    
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
